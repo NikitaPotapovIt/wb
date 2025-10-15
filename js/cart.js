@@ -1,5 +1,5 @@
 const cart = function () {
-        const cartBtn = document.querySelector('.button-cart')
+    const cartBtn = document.querySelector('.button-cart')
     const cart = document.getSelector('#modal-cart')
     const closeBtn = cart.querySelector('.model-close')
 

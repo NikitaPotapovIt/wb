@@ -8,16 +8,17 @@ const getGoods = () => {
                 console.log(data);
                 localStorage.setItem('goods', JSON.stringify(data))
             })
-    }
-
-    links.forEach((link) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault()
-            console.log('data');
-            getData();
+        }
+        
+        links.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault()
+                console.log('data');
+                getData();
+            })
         })
-    })
-
+        
+    localStorage.clear();
 }
 
 getGoods()
